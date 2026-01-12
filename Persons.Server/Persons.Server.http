@@ -1,0 +1,24 @@
+GET http://localhost:5056/
+Accept: application/json
+
+###
+
+GET http://localhost:5056/persons
+Accept: application/json
+
+###
+
+GET http://localhost:5056/persons/0
+Accept: application/json
+
+###
+
+GET http://localhost:5056/persons/1
+Accept: application/json
+
+###
+
+GET http://localhost:5056/persons/andrey
+Accept: application/json
+
+###
