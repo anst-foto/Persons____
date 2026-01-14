@@ -22,3 +22,11 @@ GET http://localhost:5056/persons/andrey
 Accept: application/json
 
 ###
+
+POST localhost:5056/persons
+Content-Type: application/json
+
+{
+  "LastName": "test",
+  "FirstName": "test"
+}

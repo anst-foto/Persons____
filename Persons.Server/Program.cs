@@ -35,5 +35,11 @@ app.MapGet("/persons/{name}", async (string name, DataBaseContext context) =>
         .ToList();
     return filteredPersons.Count == 0 ? Results.NotFound() : Results.Ok(filteredPersons);
 });
+app.MapPost("/persons", async (Person person, DataBaseContext context) =>
+{
+    var addedPerson = await context.Persons.AddAsync(person);
+    await context.SaveChangesAsync();
+    return Results.Created($"/persons/{addedPerson.Entity.Id}", addedPerson.Entity);
+});
 
 await app.RunAsync();
