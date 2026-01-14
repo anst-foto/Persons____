@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="Persons.Client/Persons.Client.csproj" />
+  <Project Path="Persons.Models/Persons.Models.csproj" />
   <Project Path="Persons.Server/Persons.Server.csproj" />
 </Solution>

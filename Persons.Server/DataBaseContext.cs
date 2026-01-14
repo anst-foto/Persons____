@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Persons.Models;
 
 namespace Persons.Server;
 
